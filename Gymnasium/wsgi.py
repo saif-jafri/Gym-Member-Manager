@@ -7,9 +7,6 @@ For more information on this file, see
 https://docs.djangoproject.com/en/2.0/howto/deployment/wsgi/
 """
 import os
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", __file__)
-import django
-django.setup()
 
 from notifications.config import get_notification_count, run_notifier
 from django.core.wsgi import get_wsgi_application
